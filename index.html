@@ -21,18 +21,19 @@
             <h3>Marks</h3>
             <ul>
                 <li>area mark</li>
+                <li>line mark</li>
             </ul>
             <h3>Channels</h3>
             <ul>
-                <li>Spatial region channel (identity channel)</li>
+                <li>Position-both horizontal and vertical channel (spatial region) (identity channel)</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because using a spatial region channel, specifically with regards to a map, displays to the user where each state (categorical attribute).</li>
+                    <li>This is a good choice because using a spatial region channel, specifically with regards to a map, displays to the user where each state (categorical attribute). This demonstrates the expressiveness principle as a categorical attribute of the different states are represented through spatial region. Additionally, the effectiveness principle is met because positioning the different states where they go spatially on the map is the most accurate way. </li>
                 </ul>
                 <li>Color hue channel (identity channel)</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because using red and blue clearly categorizes the two voting parties and the two contestants up against one another.</li>
+                    <li>This is a good choice because using red and blue clearly categorizes the two voting parties and the two contestants up against one another, which demonstrates the expressiveness principle as a categorical attribute is being shown with a color hue channel (an identity channel). It also shows what each states' electoral votes would have gone to, either the democrat, republican, or both. This suggests that this follows the effectiveness principle with regards to being clearly discriminable with regards to if each states' electral votes fell into the democrat, republican, or both. </li>
                 </ul>
             </ul>
             <h3>Colormap(s)</h3>
@@ -40,7 +41,7 @@
                 <li>Categorical colormap</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because the different colors (red and blue) clearly displays that there a two distinct categories.</li>
+                    <li>This is a good choice because the different colors (red and blue) clearly displays that there a two distinct parties and two distinct candidates (Trump and Clinton) running against each other.</li>
                 </ul>
             </ul>
       </div>
@@ -54,15 +55,15 @@
             </ul>
             <h3>Channels</h3>
             <ul>
-                <li>Position on common scale channel (magnitude channel)</li>
+                <li>Position on common scale-both vertical and horizontal channel (magnitude channel)</li>
                 <ul>
-                    <li>Represents ordered (quantitative) attribute type</li>
-                    <li>This is a good choice because using a common scale allows for quick and easy understanding and comparison of the different batted balls with regards to their exxit velocity and launch angle.</li>
+                    <li>Represents ordered (quantitative, diverging) attribute type</li>
+                    <li>This is a good choice because using a common scale allows for quick and easy understanding and comparison of the different batted balls with regards to their exit velocity (x-axis, horizontal positioning) and launch angle (y-axis, vertical positioning). This fulfills the expressiveness principle as it takes into account the two factors that need to be shown (exit velocity and launch angle) and does so with positioning in both directions, suggesting that there is ordering involved. This also demonstrates the effectiveness principle as the common scale provides accuracy with regards to the exit velocity and launch angle.</li>
                 </ul>
                 <li>Color saturation channel (magnitude channel)</li>
                 <ul>
-                    <li>Represents ordered (quantitative) attribute type</li>
-                    <li>This is a good choice because it shows which batted balls are closer to below average, average, and above averaget in LWTS.</li>
+                    <li>Represents ordered (quantitative, sequential) attribute type</li>
+                    <li>This is a moderate-bad choice. With regards to the effectiveness principle, the color channel used is not very discriminable, specifically between the same category (below and above average). With the expressiveness principle, it does show to some extent that there is ordering involved but clearly deciphering between below average, average, and above average can be a little hard.</li>
                 </ul>
             </ul>
             <h3>Colormap(s)</h3>
@@ -70,7 +71,7 @@
                 <li>Divergent colormap</li>
                 <ul>
                     <li>Represents ordered (quantitative) attribute type</li>
-                    <li>This is a good choice because the two colors, purple and orange, represent the extremes while the neutral color in the middle, white, represents the average.</li>
+                    <li>This is a good choice because the two colors, purple and orange, represent the extremes while the neutral color in the middle, white, represents the average. However, if another color for the average was used, the visualization may have been more effective. Even though the background of the visualization is gray, it is still very close to white and it may be hard to decipher whether there is no data in an area or if it represents the average/</li>
                 </ul>
             </ul>
       </div>
@@ -94,7 +95,7 @@
                 <li>Color hue channel (identity channel)</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because using blue, orange, and red clearly categorizes the people in the dataset into three distinct age categories and using the three different colors, you can clearly distinguish the different attrition rates for each age category.</li>
+                    <li>This is a good choice because using blue, orange, and red clearly categorizes the people in the dataset into three distinct age categories (satisfying the expressiveness principle) and using the three different colors, you can clearly distinguish the different attrition rates for each age category (satisfying the effectiveness principle, specifically with regards to discriminability).</li>
                 </ul>
             </ul>
             <h3>Colormap(s)</h3>
