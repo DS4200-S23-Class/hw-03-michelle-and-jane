@@ -1,23 +1,22 @@
+/* Make all font on page Arial */
 body {
 	font-family: Arial;
 }
 
+/* Make text (headings in this case) centered */
 .centered {
 	text-align: center;
 }
 
-.item {
-  width: 100%
-}
-
+/* Flexbox container properties*/
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Flexbox container children properties */
 .item {
+	width: 100%;
 	flex: 50%;
 	margin-bottom: 10px;
 }
-
-

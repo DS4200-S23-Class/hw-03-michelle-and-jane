@@ -15,44 +15,63 @@
 
     <!-- Create a flex container for the two visualizations and analysis --> 
     <div class="container">
-      <div class="item"><img src="img\vis1.png" alt="What 2016 would look life if just women voted"></div>
-
-      <div class="item">
+        <!-- Viz 1 image -->
+        <div class="item"><img src="img\vis1.png" alt="What 2016 would look life if just women voted"></div>
+        <!-- Viz 1 marks -->
+        <div class="item">
             <h3>Marks</h3>
             <ul>
                 <li>area mark</li>
+                <ul>
+                    <li>Each of the states on the map represent an area mark with both height and width.</li>
+                </ul>
                 <li>line mark</li>
+                <ul>
+                    <li>The bar at the top of the visualization represents a line mark showing the amount of democrat electoral votes versus republican electoral votes.</li>
+                </ul>
             </ul>
+            <!-- Viz 1 channels --> 
             <h3>Channels</h3>
             <ul>
                 <li>Position-both horizontal and vertical channel (spatial region) (identity channel)</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because using a spatial region channel, specifically with regards to a map, displays to the user where each state (categorical attribute). This demonstrates the expressiveness principle as a categorical attribute of the different states are represented through spatial region. Additionally, the effectiveness principle is met because positioning the different states where they go spatially on the map is the most accurate way. </li>
+                    <li>This is a good choice because using a spatial region channel, specifically with regards to a map, displays to the user where each state (categorical attribute) is. This demonstrates the expressiveness principle as a categorical attribute of the different states are represented through spatial region. Additionally, the effectiveness principle is met because positioning the different states where they go spatially on the map is the most accurate way. </li>
                 </ul>
                 <li>Color hue channel (identity channel)</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because using red and blue clearly categorizes the two voting parties and the two contestants up against one another, which demonstrates the expressiveness principle as a categorical attribute is being shown with a color hue channel (an identity channel). It also shows what each states' electoral votes would have gone to, either the democrat, republican, or both. This suggests that this follows the effectiveness principle with regards to being clearly discriminable with regards to if each states' electral votes fell into the democrat, republican, or both. </li>
+                    <li>This is a good choice because using red and blue clearly categorizes the two voting parties and the two contestants up against one another, which demonstrates the expressiveness principle as a categorical attribute is being shown with a color hue channel (an identity channel). It also shows where each states' electoral votes would have gone to, either the democrat, republican, or both. This follows the effectiveness principle with regards to being clearly discriminable with regards to if each states' electoral votes fell into the democrat, republican, or both. </li>
+                </ul>
+                <li>Length channel (magnitude channel)</li>
+                <ul>
+                    <li>Represents ordered (quantitative, sequential) attribute type</li>
+                    <Li>This is a good choice because the different in lengths of the blue and red line follows the expressiveness principle in showing that one party (democrat) has much greater votes than the other party (republican). It also follows the effectiveness principle as it is clear as to which line is longer than the other.</Li>
                 </ul>
             </ul>
+            <!-- Viz 1 colormap -->
             <h3>Colormap(s)</h3>
             <ul>
                 <li>Categorical colormap</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because the different colors (red and blue) clearly displays that there a two distinct parties and two distinct candidates (Trump and Clinton) running against each other.</li>
+                    <li>This is a good choice because the different colors (red and blue) clearly displays that there a two distinct parties and two distinct candidates (Trump and Clinton) running against each other. The two colors are perpetually distant and are roughly the same saturation and value.</li>
                 </ul>
             </ul>
-      </div>
+        </div>
 
-      <div class="item"><img src="img\vis2.png" alt="Scoring value (LWTS) of batted balls based on launch angle and speed of batt, 2015 MLB"></div>
-
-      <div class="item">
+        <!-- Viz 2 image -->
+        <div class="item"><img src="img\vis2.png" alt="Scoring value (LWTS) of batted balls based on launch angle and speed of batt, 2015 MLB"></div>
+        <!-- Viz 2 marks --> 
+        <div class="item">
             <h3>Marks</h3>
             <ul>
                 <li>point mark</li>
+                <ul>
+                    <li>Each of the points on the visualization represents a point mark that has an exit velocity and a launch angle.</li>
+                </ul>
             </ul>
+            <!-- Viz 2 channels -->
             <h3>Channels</h3>
             <ul>
                 <li>Position on common scale-both vertical and horizontal channel (magnitude channel)</li>
@@ -63,33 +82,38 @@
                 <li>Color saturation channel (magnitude channel)</li>
                 <ul>
                     <li>Represents ordered (quantitative, divergent) attribute type</li>
-                    <li>This is a moderate-bad choice. With regards to the effectiveness principle, the color channel used is not very discriminable, specifically between the same category (below and above average). With the expressiveness principle, it does show to some extent that there is ordering involved but clearly deciphering between below average, average, and above average can be a little hard.</li>
+                    <li>This is not a good choice. With regards to the effectiveness principle, the color channel used is not very discriminable, specifically between the same category (below and above average). With the expressiveness principle, it does show to some extent that there is ordering involved but clearly deciphering between below average and average as well as average and above average can be a little hard.</li>
                 </ul>
             </ul>
+            <!-- Viz 2 colormap -->
             <h3>Colormap(s)</h3>
             <ul>
                 <li>Divergent colormap</li>
                 <ul>
                     <li>Represents ordered (quantitative, divergent) attribute type</li>
-                    <li>This is a good choice because the two colors, purple and orange, represent the extremes while the neutral color in the middle, white, represents the average. However, if another color for the average was used, the visualization may have been more effective. Even though the background of the visualization is gray, it is still very close to white and it may be hard to decipher whether there is no data in an area or if it represents the average/</li>
+                    <li>This is a mediocre choice because the two colors, purple and orange, represent the extremes while the neutral color in the middle, white, represents the average. However, if another color for the average was used, the visualization may have been more effective. Even though the background of the visualization is gray, it is still very close to white and it may be hard to decipher whether there is no data in an area or if it represents the average. Also, in addition to having a color represent average, there should maybe be another color representing "no data."</li>
                 </ul>
             </ul>
-      </div>
-
-      <div class="item">
-        <img src="img\Age Bar.png" alt="Attrition Rate By Age">
-        <!-- Added a button feauture -->
-        <button type="button" onclick="displayText()">Learn More!</button>
-        <div id="moreText">
-            
         </div>
-      </div>
-
-      <div class="item">
+        <div class="item">
+            <!-- Viz 3 image -->
+            <img src="img\Age Bar.png" alt="Attrition Rate By Age">
+            <!-- Added a button feauture -->
+            <button type="button" onclick="displayText()">Learn More!</button>
+            <div id="moreText">
+                
+            </div>
+        </div>
+        <!-- Viz 3 marks -->
+        <div class="item">
             <h3>Marks</h3>
             <ul>
-                <li>area mark</li>
+                <li>line mark</li>
+                <ul>
+                    <li>Line marks are used to represent the three different age ranges.</li>
+                </ul>
             </ul>
+            <!-- Viz 3 channels -->
             <h3>Channels</h3>
             <ul>
                 <li>Color hue channel (identity channel)</li>
@@ -97,17 +121,22 @@
                     <li>Represents categorical attribute type</li>
                     <li>This is a good choice because using blue, orange, and red clearly categorizes the people in the dataset into three distinct age categories (satisfying the expressiveness principle) and using the three different colors, you can clearly distinguish the different attrition rates for each age category (satisfying the effectiveness principle, specifically with regards to discriminability).</li>
                 </ul>
+                <li>Position on common scale-vertical channel (magnitude channel)</li>
+                <ul>
+                    <li>Represents ordered (quantitative, sequential) attribute type</li>
+                    <li>This is a good choice because the different of the bars along the vertical axis are of different positions suggesting difference in rate (y-axis value), which follows the expressiveness principle. With regards to the effectiveness principle, the positions that the bars are on are different enough (discriminable) to tell which age ranges have a greater or lower rate.</li>
+                </ul>
             </ul>
+            <!-- Viz 3 colormap -->
             <h3>Colormap(s)</h3>
             <ul>
                 <li>Categorical colormap</li>
                 <ul>
                     <li>Represents categorical attribute type</li>
-                    <li>This is a good choice because the different colors represent different age categories. Blue represents Middle Age group, orange represents Senior age group, and red represents Young age group.The three different colors clearly displays that are there three distinct categories in the visualization.</li>
+                    <li>This is a good choice because the different colors represent different age categories. Blue represents Middle Age group, orange represents Senior age group, and red represents Young age group.The three different colors clearly displays that there are three distinct categories in the visualization. The three colors are perpetually distant and are roughly the same saturation and value.</li>
                 </ul>
             </ul>
-      </div>
-
+        </div>
     </div>
     
     <h2 class="centered">Acknowledgements</h2>
@@ -115,6 +144,7 @@
         <ul>
             <li> <a href="https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset">Kaggle Attrition Dataset</a>
             </li>
+            <li><a href="https://www.w3schools.com/js/js_if_else.asp">Javascript if, else, and else if</a></li>
         </ul>
     </div>
     <script src="main.js"></script>
