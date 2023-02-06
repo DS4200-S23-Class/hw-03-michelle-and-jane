@@ -1,7 +1,7 @@
 let count = 2; 
 
 function displayText(){
-	count += 1;
+	
 	let buttonDiv = document.getElementById("moreText");
 	if (count % 2 == 0){
 		buttonDiv.innerHTML = "Visualization made using employee attrition dataset from Kaggle. \
@@ -11,4 +11,5 @@ function displayText(){
 	}
 	else 
 		{buttonDiv.innerHTML = ""};
+	count += 1;
 }
