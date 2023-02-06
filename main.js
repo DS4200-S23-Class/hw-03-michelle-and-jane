@@ -1,4 +1,4 @@
-let count = 1; 
+let count = 2; 
 
 function displayText(){
 	count += 1;
